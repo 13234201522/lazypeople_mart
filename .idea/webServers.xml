@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="638f6352-52f5-4848-8a65-e0074576d424" name="懒人正式">
+        <fileTransfer rootFolder="/www/wwwroot/lazy_mart" accessType="SFTP" host="49.51.93.110" port="22" sshConfigId="a0f591b2-6640-4f43-b71f-2a657afde165" sshConfig="root@49.51.93.110:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

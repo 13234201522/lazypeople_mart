@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1eb775a3-4116-4e4f-8503-424973c5b8e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/LevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/LevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/202008/27.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/202008/27.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/1b99a1f5c3ec9976a0173ac4aa34cf6d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/1b99a1f5c3ec9976a0173ac4aa34cf6d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/6fe6d903616ff528443480508be7f67a.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/6fe6d903616ff528443480508be7f67a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/e7f2b3a546bb2823d21d83fb2efc12f8.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/e7f2b3a546bb2823d21d83fb2efc12f8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workerman.log" beforeDir="false" afterPath="$PROJECT_DIR$/workerman.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/overtrue/socialite" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/wechat" />
+      <path value="$PROJECT_DIR$/vendor/overtrue/pinyin" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/karsonzhang/fastadmin-addons" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/endroid/qr-code" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-captcha" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1fzE9FBbSAaerogFmapohmW9bC7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/admin/view/order" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wwwroot\lazypeople_mart\application\admin\view\order" />
+      <recent name="D:\wwwroot\lazypeople_mart\application\admin\view\test_address" />
+      <recent name="D:\wwwroot\lazypeople_mart\application\admin\view\category" />
+      <recent name="D:\wwwroot\lazypeople_mart\application\admin\model" />
+      <recent name="D:\wwwroot\lazypeople_mart\application\api\model" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eb775a3-4116-4e4f-8503-424973c5b8e1" name="Default Changelist" comment="" />
+      <created>1597212367283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597212367283</updated>
+      <workItem from="1597212370239" duration="53000" />
+      <workItem from="1597213297228" duration="107380000" />
+      <workItem from="1597662814064" duration="240000" />
+      <workItem from="1597665038088" duration="114364000" />
+      <workItem from="1598336230760" duration="56631000" />
+      <workItem from="1598595452533" duration="9355000" />
+      <workItem from="1599105489376" duration="1532000" />
+      <workItem from="1599128471021" duration="1192000" />
+      <workItem from="1599193540123" duration="3484000" />
+      <workItem from="1599619936704" duration="3740000" />
+      <workItem from="1600064063536" duration="15443000" />
+      <workItem from="1600226855940" duration="109000" />
+      <workItem from="1600230556757" duration="4728000" />
+    </task>
+    <task id="LOCAL-00001" summary="15天自动收货">
+      <created>1598502562806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598502562806</updated>
+    </task>
+    <task id="LOCAL-00002" summary="15天自动收货">
+      <created>1598502587552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598502587552</updated>
+    </task>
+    <task id="LOCAL-00003" summary="15天自动收货">
+      <created>1598502658882</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598502658882</updated>
+    </task>
+    <task id="LOCAL-00004" summary="15天自动收货">
+      <created>1598509334557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598509334557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="后台删除秒杀">
+      <created>1598513526284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598513526284</updated>
+    </task>
+    <task id="LOCAL-00006" summary="秒杀">
+      <created>1598517925616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598517925616</updated>
+    </task>
+    <task id="LOCAL-00007" summary="秒杀">
+      <created>1598518041658</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598518041658</updated>
+    </task>
+    <task id="LOCAL-00008" summary="秒杀">
+      <created>1598519247192</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598519247192</updated>
+    </task>
+    <task id="LOCAL-00009" summary="秒杀">
+      <created>1598523724347</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1598523724347</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修改">
+      <created>1598595883019</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598595883019</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修改">
+      <created>1598604690971</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598604690971</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改">
+      <created>1600075175533</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600075175533</updated>
+    </task>
+    <task id="LOCAL-00013" summary="订单">
+      <created>1600082318438</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600082318438</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="15天自动收货" />
+    <MESSAGE value="后台删除秒杀" />
+    <MESSAGE value="秒杀" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1600237044003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1600237044003" />
+    <state x="536" y="165" key="#SSH_Configurations" timestamp="1600236586633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="165" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1600236586633" />
+    <state x="113" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597832973676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="113" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597832973676" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600079656343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600079656343" />
+    <state x="558" y="85" key="CommitChangelistDialog2" timestamp="1600082317896">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="558" y="85" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600082317896" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1600075164104">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600075164104" />
+    <state x="693" y="240" key="NewPhpClassDialog" timestamp="1598524236855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="240" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598524236855" />
+    <state x="776" y="442" key="NewPhpFileDialog" timestamp="1597662369004">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597662369004" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1597904128792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597904128792" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600082319587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600082319587" />
+    <state x="661" y="252" width="598" height="536" key="find.popup" timestamp="1600069726542">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="252" width="598" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600069726542" />
+    <state x="959" y="306" key="ftp.server.browser" timestamp="1600237042796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="959" y="306" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1600237042796" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1598601637194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598601637194" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597895542339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597895542339" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/assets/js/backend/seckill_goods.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

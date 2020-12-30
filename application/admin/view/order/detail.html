@@ -1,0 +1,68 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>{:__('Title')}</th>
+            <th>{:__('Content')}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>订单编号</td>
+            <td>{$row.order_num}</td>
+        </tr>
+        <tr>
+            <td>商品总价</td>
+            <td>{$row.total_goods_price}</td>
+        </tr>
+        <tr>
+            <td>邮费</td>
+            <td>{$row.postage_price}</td>
+        </tr>
+        <tr>
+            <td>满减</td>
+            <td>{$row.fullcut_price}</td>
+        </tr>
+        <tr>
+            <td>优惠券</td>
+            <td>{$row.coupon_price}</td>
+        </tr>
+        <tr>
+            <td>打赏</td>
+            <td>{$row.reward_price}</td>
+        </tr>
+        <tr>
+            <td>打赏</td>
+            <td>{$row.reward_price}</td>
+        </tr>
+        <tr>
+            <td>税费</td>
+            <td>{$row.tax_price}</td>
+        </tr>
+        <tr>
+            <td>订单备注</td>
+            <td>{$row.order_notes}</td>
+        </tr>
+        <tr>
+            <td>下单时间</td>
+            <td>{$row.createtime_text}</td>
+        </tr>
+        <tr>
+            <td>支付时间</td>
+            <td>{$row.paytime_text}</td>
+        </tr>
+        <tr>
+            <td>发货时间</td>
+            <td>{$row.sendtime_text}</td>
+        </tr>
+        <tr>
+            <td>完成时间</td>
+            <td>{$row.finishtime_text}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="hide layer-footer">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">{:__('Close')}</button>
+    </div>
+</div>

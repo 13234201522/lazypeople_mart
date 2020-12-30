@@ -1,0 +1,116 @@
+2020-08-18 12:12:00 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to undefined function send_post() in D:\wwwroot\lazypeople_mart\timing\start.php:13
+Stack trace:
+#0 D:\wwwroot\lazypeople_mart\timing\Events\Select.php(232): {closure}()
+#1 D:\wwwroot\lazypeople_mart\timing\Events\Select.php(281): Workerman\Events\Select->tick()
+#2 D:\wwwroot\lazypeople_mart\timing\Worker.php(2416): Workerman\Events\Select->loop()
+#3 D:\wwwroot\lazypeople_mart\timing\Worker.php(1404): Workerman\Worker->run()
+#4 D:\wwwroot\lazypeople_mart\timing\Worker.php(1347): Workerman\Worker::forkWorkersForWindows()
+#5 D:\wwwroot\lazypeople_mart\timing\Worker.php(546): Workerman\Worker::forkWorkers()
+#6 D:\wwwroot\lazypeople_mart\timing\start.php(44): Workerman\Worker::runAll()
+#7 {main}
+  thrown in D:\wwwroot\lazypeople_mart\timing\start.php on line 13"
+2020-08-28 16:08:31 pid:1 Worker process terminated
+2020-08-28 16:25:11 pid:1 Worker process terminated
+2020-08-28 16:28:10 pid:1 Worker process terminated
+2020-08-28 16:28:34 pid:1 Worker process terminated
+2020-08-28 16:31:33 pid:1 Worker process terminated
+2020-08-28 16:31:45 pid:1 Worker process terminated
+2020-08-28 16:31:58 pid:1 Worker process terminated
+2020-08-28 16:33:10 pid:1 Worker process terminated
+2020-08-28 16:39:46 pid:1 Worker process terminated
+2020-08-28 16:40:07 pid:1 Worker process terminated
+2020-08-28 16:40:21 pid:1 Worker process terminated
+2020-08-28 16:46:39 pid:1 Worker process terminated
+2020-08-28 16:48:32 pid:1 Worker process terminated
+2020-09-25 20:20:09 pid:17333 Workerman[start.php] start in DAEMON mode
+2020-09-25 20:20:15 pid:17353 Workerman[start.php] start in DEBUG mode
+2020-09-25 20:20:15 pid:17353 Workerman[start.php] already running
+2020-09-26 12:11:48 pid:12915 Workerman[start.php] restart 
+2020-09-26 12:11:48 pid:12915 Workerman[start.php] is stopping ...
+2020-09-26 12:11:48 pid:17335 Workerman[start.php] stopping ...
+2020-09-26 12:11:50 pid:17335 worker[none:17336] exit with status 9
+2020-09-26 12:11:50 pid:17335 Workerman[start.php] has been stopped
+2020-09-26 12:11:50 pid:12915 Workerman[start.php] stop success
+2020-09-26 12:11:52 pid:12915 Workerman[start.php] stopping ...
+2020-09-26 12:11:52 pid:12915 Workerman[start.php] has been stopped
+2020-09-26 12:12:01 pid:12983 Workerman[start.php] start in DEBUG mode
+2020-09-26 12:12:03 pid:12983 Workerman[start.php] stopping ...
+2020-09-26 12:12:03 pid:12983 Workerman[start.php] has been stopped
+2020-09-26 12:12:06 pid:13003 Workerman[start.php] start in DAEMON mode
+2020-09-26 12:12:24 pid:13049 Workerman[start.php] restart 
+2020-09-26 12:12:24 pid:13049 Workerman[start.php] is stopping ...
+2020-09-26 12:12:24 pid:13005 Workerman[start.php] stopping ...
+2020-09-26 12:12:24 pid:13005 Workerman[start.php] has been stopped
+2020-09-26 12:12:24 pid:13049 Workerman[start.php] stop success
+2020-09-26 12:12:31 pid:13049 Workerman[start.php] stopping ...
+2020-09-26 12:12:31 pid:13049 Workerman[start.php] has been stopped
+2020-09-26 12:12:43 pid:13104 Workerman[start.php] start in DAEMON mode
+2020-10-07 16:24:34 pid:19843 Workerman[start.php] stop 
+2020-10-07 16:24:34 pid:19843 Workerman[start.php] is stopping ...
+2020-10-07 16:24:34 pid:13106 Workerman[start.php] stopping ...
+2020-10-07 16:24:34 pid:13106 Workerman[start.php] has been stopped
+2020-10-07 16:24:34 pid:19843 Workerman[start.php] stop success
+2020-10-07 16:24:41 pid:19879 Workerman[start.php] start in DEBUG mode
+2020-10-07 16:24:43 pid:19879 Workerman[start.php] stopping ...
+2020-10-07 16:24:43 pid:19879 Workerman[start.php] has been stopped
+2020-10-07 16:24:51 pid:19918 Workerman[start.php] start in DAEMON mode
+2020-10-07 16:25:09 pid:19997 Workerman[start.php] restart 
+2020-10-07 16:25:09 pid:19997 Workerman[start.php] is stopping ...
+2020-10-07 16:25:09 pid:19920 Workerman[start.php] stopping ...
+2020-10-07 16:25:09 pid:19920 Workerman[start.php] has been stopped
+2020-10-07 16:25:09 pid:19997 Workerman[start.php] stop success
+2020-10-07 16:38:10 pid:22781 Workerman[start.php] restart 
+2020-10-07 16:38:10 pid:22781 Workerman[start.php] is stopping ...
+2020-10-07 16:38:15 pid:22781 Workerman[start.php] stop fail
+2020-10-07 16:38:21 pid:22810 Workerman[start.php] start in DAEMON mode
+2020-10-07 16:38:21 pid:22810 Workerman[start.php] already running
+2020-10-07 16:38:32 pid:22840 Workerman[start.php] stop 
+2020-10-07 16:38:32 pid:22840 Workerman[start.php] is stopping ...
+2020-10-07 16:38:37 pid:22840 Workerman[start.php] stop fail
+2020-10-07 16:38:48 pid:22897 Workerman[start.php] start in DEBUG mode
+2020-10-07 16:38:48 pid:22897 Workerman[start.php] already running
+2020-10-07 16:39:11 pid:22989 Workerman[start.php] stop 
+2020-10-07 16:39:11 pid:22989 Workerman[start.php] is stopping ...
+2020-10-07 16:39:16 pid:22989 Workerman[start.php] stop fail
+2020-10-07 16:40:24 pid:23226 Workerman[start.php] stop 
+2020-10-07 16:40:24 pid:23226 Workerman[start.php] is stopping ...
+2020-10-07 16:40:29 pid:23226 Workerman[start.php] stop fail
+2020-10-07 16:41:04 pid:23383 Workerman[start.php] reload 
+2020-10-07 16:41:15 pid:23420 Workerman[start.php] stop 
+2020-10-07 16:41:15 pid:23420 Workerman[start.php] is stopping ...
+2020-10-07 16:41:20 pid:23420 Workerman[start.php] stop fail
+2020-10-07 16:41:30 pid:23464 Workerman[start.php] status 
+2020-10-07 16:41:39 pid:23506 Workerman[start.php] connections 
+2020-10-07 16:41:53 pid:23551 Workerman[start.php] stop 
+2020-10-07 16:41:53 pid:23551 Workerman[start.php] is stopping ...
+2020-10-07 16:41:58 pid:23551 Workerman[start.php] stop fail
+2020-10-07 16:43:43 pid:19997 Workerman[start.php] stopping ...
+2020-10-07 16:43:44 pid:19997 Workerman[start.php] has been stopped
+2020-10-07 16:44:07 pid:24007 Workerman[start.php] stop 
+2020-10-07 16:44:07 pid:24007 Workerman[start.php] not run
+2020-10-07 16:44:23 pid:24061 Workerman[start.php] start in DEBUG mode
+2020-11-03 16:57:57 pid:14755 Workerman[start.php] restart 
+2020-11-03 16:57:57 pid:14755 Workerman[start.php] is stopping ...
+2020-11-03 16:57:57 pid:14755 Workerman[start.php] stop success
+2020-11-03 16:58:01 pid:14755 Workerman[start.php] stopping ...
+2020-11-03 16:58:01 pid:14755 Workerman[start.php] has been stopped
+2020-11-03 16:58:13 pid:14821 Workerman[start.php] start in DEBUG mode
+2020-11-03 16:58:15 pid:14821 Workerman[start.php] stopping ...
+2020-11-03 16:58:15 pid:14821 Workerman[start.php] has been stopped
+2020-11-03 16:58:19 pid:14842 Workerman[start.php] start in DAEMON mode
+2020-11-25 17:49:40 pid:25840 Workerman[start.php] stop 
+2020-11-25 17:49:40 pid:25840 Workerman[start.php] is stopping ...
+2020-11-25 17:49:40 pid:14844 Workerman[start.php] stopping ...
+2020-11-25 17:49:40 pid:14844 Workerman[start.php] has been stopped
+2020-11-25 17:49:40 pid:25840 Workerman[start.php] stop success
+2020-11-25 17:49:45 pid:25852 Workerman[start.php] start in DEBUG mode
+2020-11-25 17:49:54 pid:25852 Workerman[start.php] stopping ...
+2020-11-25 17:49:54 pid:25852 Workerman[start.php] has been stopped
+2020-11-25 17:50:45 pid:26055 Workerman[start.php] start in DEBUG mode
+2020-11-25 17:50:47 pid:26055 Workerman[start.php] stopping ...
+2020-11-25 17:50:47 pid:26055 Workerman[start.php] has been stopped
+2020-11-25 17:53:46 pid:26655 Workerman[start.php] start in DEBUG mode
+2020-11-25 17:53:48 pid:26655 Workerman[start.php] stopping ...
+2020-11-25 17:53:48 pid:26655 Workerman[start.php] has been stopped
+2020-11-25 17:54:30 pid:26810 Workerman[start.php] start in DEBUG mode
+2020-11-25 18:16:47 pid:31653 Workerman[start.php] start in DAEMON mode

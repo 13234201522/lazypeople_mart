@@ -1,0 +1,419 @@
+/* 
+
+项目独有的公共样式
+ 
+ */
+
+/* 一屏状态下页面高度100% */
+
+.main_div{
+	height: 100vh;
+	background: #1C1C1C;
+	display: flex;
+	justify-content: center;
+}
+
+.wai_div{
+	height: 100vh;
+	background: #1C1C1C;
+}
+
+.main_fix{
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	background: #1C1C1C;
+}
+
+
+
+.content {
+	width: 440upx;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.content_2 {
+	width: 440upx;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* 登录注册输入框公共样式 */
+/* .inputItem{
+	width: 440upx;
+	height: 86upx;
+	line-height: 86upx;
+	border: NaNpx solid;
+	background-image:url(./static/img/-e-juxingkuang.png) ;
+	border-image: linear-gradient(0deg, #dcc6a0 0%, #e6e4d2 33%, #584e46 68%, #dcc6a0 100%);
+	border-radius: 10upx;
+	background-size: 440upx 86upx;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #fafbfc;
+} */
+
+/* 手机号 +86 */
+
+.code{
+	position: absolute;
+	top: 25%;
+	font-size: 32upx;
+	font-family: PingFang SC-Medium, PingFang SC-Medium-SC-Medium;
+	font-weight: SC-Medium;
+	text-align: justifyLeft;
+	color: #fafbfc;
+	margin-left: 30upx;
+}
+
+.itemText{
+	font-size: 32upx;
+	font-family: PingFang SC-Medium, PingFang SC-Medium-SC-Medium;
+	font-weight: SC-Medium;
+	text-align: justifyLeft;
+	color: #e8cfa5;
+}
+
+/* 登录注册按钮 */
+.c_btn{
+	width: 440upx;
+	height: 86upx;
+	border-radius: 10upx;
+	background: #5C5C5C;
+	color: #fafbfc;
+	line-height: 86upx;
+	text-align: center;
+}
+
+/* .c_btn_active{
+	background-image: url(./static/img/loginImg/-e-denglu.png);
+	background-size: 440upx 86upx;
+	width: 440upx;
+	height: 86upx;
+	border-radius: 10upx;
+	line-height: 86upx;
+	text-align: center;
+	color: #2A2623;
+	font-weight: bold;
+} */
+
+/* 白色公共颜色 */
+
+.white{
+	color: #fafbfc;
+}
+
+.black{
+	color: #2A2623;
+}
+
+.b1C1C1C{
+	background: #1C1C1C;
+}
+
+.BABABA{
+	color: #BABABA;
+}
+
+.yell{
+	color: #DCAD7B;
+}
+
+.bf9b73{
+	color: #bf9b73;
+}
+
+.ffffff{
+	color: #ffffff;
+}
+
+.2B2724{
+	background-color: #2B2724;
+}
+
+.343434{
+	background: #343434!important;
+}
+
+.mar_l_20{
+	margin-left: 20upx;
+}
+
+.mar_l_10{
+	margin-left: 10upx;
+}
+
+.mar{
+	margin-top: 30upx;
+}
+.mar20{
+	margin-top: 20upx;
+}
+.mar10{
+	margin-top: 10upx;
+}
+.pad40{
+	padding-bottom: 40upx;
+}
+
+.mar_bot30{
+	margin-bottom: 30upx;
+}
+
+.mar40{
+	margin-top: 40upx;
+}
+.mar50{
+	margin-top: 50upx;
+}
+.mar60{
+	margin-bottom: 100upx;
+}
+.pad130{
+	padding-bottom: 130upx;
+}
+
+.mar_t_60{
+	margin-top: 60upx;
+}
+
+.mar_t_70{
+	margin-top: 70upx;
+}
+.mar5lp{
+	margin-left: 5%;
+}
+.mar5rp{
+	margin-right: 5%;
+}
+.mar_t_80{
+	margin-top: 80upx;
+}
+
+.mar_t_120{
+	margin-top: 120upx;
+}
+.mar_lr_20{
+	margin: 0 20upx;
+}
+.mar_t_100{
+	margin-top: 100upx;
+}
+
+.mar_r_20{
+	margin-right: 20upx;
+}
+
+.f_40{
+	font-size: 40upx;
+}
+
+.f_24{
+	font-size: 24upx;
+}
+
+.head_class{
+	width: 100upx;
+	height: 100upx;
+	border-radius: 50%;
+}
+
+.nodata{
+	width: 80upx;
+	height: 80upx;
+}
+
+.icon_item{
+	width: 50upx;
+	height: 50upx;
+}
+.icon_item40{
+	width: 40upx;
+	height: 40upx;
+}
+.icon_item30{
+	width: 30upx;
+	height: 30upx;
+}
+
+.width96{
+	width: 96%;
+}
+
+.width94{
+	width: 94%;
+}
+.width90{
+	width: 90%;
+}
+.line{
+	width: 96%;
+	height: 1upx;
+	background: linear-gradient(#dcc6a0 0%, #e6e4d2 33%, #584e46 68%, #dcc6a0 100%);
+	opacity: .3;
+}
+.storeImg{
+	width: 100%;
+	height: 120upx;
+}
+.intru_text{
+	font-size: 28upx;
+	font-family: PingFang SC-Bold, PingFang SC-Bold-SC-Bold;
+	font-weight: bold;
+	text-align: right;
+	color: #bababa;
+}
+
+.girl_size{
+	width: 100%;
+	height: 290upx;
+	border-radius: 20upx;
+}
+
+.girl_div{
+	width: 100%;
+	height: 290upx;
+}
+
+.bechoose{
+	position: absolute;
+	right: 15upx;
+	bottom: 20upx;
+	width: 40upx;
+	height: 40upx;
+}
+
+.bechooseS{
+	width: 40upx;
+	height: 40upx;
+}
+
+.quan_icon{
+	width: 40upx;
+	height: 40upx;
+	border-radius: 50%;
+}
+
+.del_btn{
+	position: fixed;
+	width: 100%;
+	height: 98upx;
+	bottom: 0;
+	z-index: 99;
+	background: #343434!important;
+}
+
+/* .del_div{
+	width: 124upx;
+	height: 66upx;
+	line-height: 66upx;
+	border: NaNpx solid;
+	background-image:url(./static/img/mineImg/default@2x.png) ;
+	border-image: linear-gradient(0deg, #dcc6a0 0%, #e6e4d2 33%, #584e46 68%, #dcc6a0 100%);
+	border-radius: 10upx;
+	background-size: 124upx 66upx;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #333333;
+} */
+
+/* .info_item_div{
+	width: 100%;
+	height: 180upx;
+	background-image:url(./static/img/mineImg/-e-juxing@2x.png) ;
+	border-image: linear-gradient(0deg, #dcc6a0 0%, #e6e4d2 33%, #584e46 68%, #dcc6a0 100%);
+	background-size: 100% 180upx;
+} */
+.mar3per{
+	margin-left: 6%;
+}
+
+.hei60per{
+	height: 60%;
+}
+.f_s_14{
+	font-size: 24upx;
+}
+
+.f_s_28{
+	font-size: 34upx;
+}
+
+.invite_div{
+	height: 100vh;
+	background: #1C1C1C;
+	display: flex;
+	justify-content: center;
+}
+
+.ebecf0{
+	color: #ebecf0;
+}
+.hei180{
+	height: 100upx;
+}
+
+.tab_div{
+	width: 100%;
+	background: #343434;
+	height: 144upx;
+}
+
+.pad_lr20{
+	padding: 0 20upx;
+}
+
+/* .s_input{
+	width: 100%;
+	height: 86upx;
+	line-height: 86upx;
+	border: NaNpx solid;
+	background-image:url(./static/img/-e-juxingkuang.png) ;
+	border-image: linear-gradient(0deg, #dcc6a0 0%, #e6e4d2 33%, #584e46 68%, #dcc6a0 100%);
+	border-radius: 10upx;
+	background-size: 100% 86upx;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #fafbfc;
+} */
+
+/* .top_input{
+	width: 100%;
+	height: 60upx;
+	line-height: 60upx;
+	border: NaNpx solid;
+	background-image:url(./static/img/-e-juxingkuang.png) ;
+	border-image: linear-gradient(0deg, #dcc6a0 0%, #e6e4d2 33%, #584e46 68%, #dcc6a0 100%);
+	border-radius: 10upx;
+	background-size: 100% 60upx;
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #fafbfc;
+} */
+
+.intru_div{
+	width: 100%;
+	height: 120upx;
+	opacity: 0.7;
+	border-radius: 20upx 20upx 0px 0px;
+	position: absolute;
+	bottom: 20upx;
+	left: 0;
+	z-index: 9999;
+	background: #ffffff;
+}

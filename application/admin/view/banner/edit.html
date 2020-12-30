@@ -1,0 +1,76 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-image" data-rule="required" class="form-control" size="50" name="row[image]" type="text" value="{$row.image|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-image" class="btn btn-primary fachoose" data-input-id="c-image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-type" data-rule="required" class="form-control selectpicker" name="row[type]">
+                {foreach name="typeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.type"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <!--    商品详情-->
+    <div class="form-group" id="goods" {if condition="$row.type neq 'goods'"} hidden {/if}>
+        <label class="control-label col-xs-12 col-sm-2">跳转地址:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-link_url[goods]" data-source="goods/index" class="form-control selectpage" name="row[link_url][goods]" type="text" value="{$row.link_url.goods|htmlentities}">
+        </div>
+    </div>
+    <!--    满减-->
+    <div class="form-group" id="fullcut" {if condition="$row.type neq 'fullcut'"} hidden {/if}>
+        <label class="control-label col-xs-12 col-sm-2">跳转地址:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-link_url[fullcut]" data-source="fullcut/index" class="form-control selectpage" name="row[link_url][fullcut]" type="text" value="{$row.link_url.fullcut|htmlentities}">
+        </div>
+    </div>
+    <!--    分类详情-->
+    <div class="form-group" id="category" {if condition="$row.type neq 'category'"} hidden {/if} >
+        <label class="control-label col-xs-12 col-sm-2">跳转地址:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-link_url[category]" data-source="category/selectpage?isTree=1" data-order-by='weigh desc' class="form-control selectpage" name="row[link_url][category]" type="text" value="{$row.link_url.category|htmlentities}">
+        </div>
+    </div>
+    <!--    外链-->
+    <div class="form-group" id="other" {if condition="$row.type neq 'other'"} hidden {/if} >
+        <label class="control-label col-xs-12 col-sm-2">跳转地址:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-link_url[other]" class="form-control" name="row[link_url][other]" type="text" value="{$row.link_url.other|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="$row.status"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

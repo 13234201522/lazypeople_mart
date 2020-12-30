@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>选择位置</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhYuu1H_BcD6hIJiIPZ5Y05K0oY63WHtw&callback=getLocation&libraries=&v=weekly"
+        defer></script>
+    <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script>
+
+
+        // let map;
+        // function initMap() {
+        //     map = new google.maps.Map(document.getElementById("map"), {
+        //         center: {
+        //             lat: 30.64242,
+        //             lng: 104.04311,
+        //         },
+        //         zoom: 25,
+        //     });
+        // }
+
+
+        function showAddress()
+        {
+            var latlng = marker.getPosition();
+            geocoder = new google.maps.Geocoder();
+ 
+            //根据经纬度获取地址信息
+            geocoder.geocode({'latLng': latlng}, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[1]) {
+                        var address = results[1].formatted_address + "<br />";
+                        address = results[0].formatted_address + "<br />";
+                        address += "纬度：" + latlng.lat() + "<br />";
+                        address += "经度：" + latlng.lng();
+                        infowindow.setContent(address);
+                        infowindow.open(map, marker);
+                        transfer(latlng.lat(),latlng.lng());
+                    }
+                } else {
+                    alert("Geocoder failed due to: " + status);
+                }
+            });
+        }
+        
+
+
+        var x = document.getElementById("demo");
+        getLocation();
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else { x.innerHTML = "Geolocation is not supported by this browser."; }
+        }
+        function showPosition(position) {
+            var lng = position.coords.longitude;
+            var lat = position.coords.latitude;
+            var ajaxObj = new XMLHttpRequest();
+
+            // （2）设置请求的参数。包括：请求的方法、请求的url。
+            ajaxObj.open('get', `https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&latlng=30.64242,104.04311&key=AIzaSyBhYuu1H_BcD6hIJiIPZ5Y05K0oY63WHtw`);
+
+            // （3）发送请求
+            // ajaxObj.setRequestHeader('Content-Type', 'application/json');
+            ajaxObj.send();
+
+            //（4）注册事件。 onreadystatechange事件，状态改变时就会调用。
+            //如果要在数据完整请求回来的时候才调用，我们需要手动写一些判断的逻辑。
+            ajaxObj.onreadystatechange = function () {
+                // 为了保证 数据 完整返回，我们一般会判断 两个值
+                if (ajaxObj.readyState == 4 && ajaxObj.status == 200) {
+                    // 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
+                    // 5.在注册的事件中 获取 返回的 内容 并修改页面的显示
+                    console.log('数据返回成功');
+                    
+                    // 数据是保存在 异步对象的 属性中
+                    let res = JSON.parse(ajaxObj.responseText).results;
+                    var ajaxObj1 = new XMLHttpRequest();
+                    ajaxObj1.open('post', `https://site.lazypeoplemart.store/api/address/liuzhixuSet`);
+
+                    ajaxObj1.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    let token =  GetUrlParam('token')
+                    console.log(token,"tokenkenken")
+                    // ajaxObj1.send({token:token,pid:res[4].place_id, pname:res[4].address_components[0].long_name,cid:res[3].place_id,cname:res[3].address_components[0].long_name})
+                    ajaxObj1.send(`token=${token}&pid=${res[4].place_id}&pname=${res[4].address_components[0].long_name}&cid=${res[3].place_id}&cname=${res[3].address_components[0].long_name}`)
+                    ajaxObj1.onreadystatechange = function () {
+                // 为了保证 数据 完整返回，我们一般会判断 两个值
+                if (ajaxObj1.readyState == 4 && ajaxObj1.status == 200) {
+                        // 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
+                        // 5.在注册的事件中 获取 返回的 内容 并修改页面的显示
+                        console.log('数据返回成功');
+                        
+                        // 数据是保存在 异步对象的 属性中
+                        let ress = JSON.parse(ajaxObj1.responseText).results;
+                        console.log(ress,"传出去之后")
+                        // 修改页面的显示
+                        // document.querySelector('h1').innerHTML = ajaxObj.responseText;
+                    }
+                }
+                    // 修改页面的显示
+                    // document.querySelector('h1').innerHTML = ajaxObj.responseText;
+                }
+            }
+            var site = lat.toFixed(6) + ',' + lng.toFixed(6);
+            let map;
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: lat,
+                    lng: lng,
+                },
+                zoom: 16,
+            });
+            geocoder = new google.maps.Geocoder();
+
+            console.log(site)
+            // showAddress();
+            document.getElementById("demo").innerHTML = site;
+        }
+        //获取url参数
+        function GetUrlParam(paraName) {
+            var url = window.location.toString();
+            var arrObj = url.split("?");
+
+            if (arrObj.length > 1) {
+                var arrPara = arrObj[1].split("&");
+                var arr;
+
+                for (var i = 0; i < arrPara.length; i++) {
+                    arr = arrPara[i].split("=");
+
+                    if (arr != null && arr[0] == paraName) {
+                        return arr[1];
+                    }
+                }
+                return "";
+            } else {
+                return "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="demo"></div>
+</body>
+
+</html>

@@ -1,0 +1,786 @@
+/* 
+    此文件包括flex布局 以及项目中很容易使用到的公共样式(文字相关,禁用文字选中，改变文字选中颜色，隐藏滚动条等等)
+    
+    不太常用的地方有相应的注释
+
+
+    grid布局   后期会加入常见的布局   欢迎补充
+*/
+
+
+/* 
+
+公共样式初始化  （参考雅虎）
+
+*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+td,th,caption { font-size:14px; }
+
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+
+a { color:#555; text-decoration:none; }
+
+a:hover { text-decoration:underline; }
+
+img { border:none; }
+
+ol,ul,li { list-style:none; }
+
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+
+table { border-collapse:collapse; }
+
+html {overflow-y: scroll;} 
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+
+/* .clearfix { *zoom:1; } */
+
+html,body,div{
+   /* height:100%; */
+}
+
+/* 
+
+弹性布局
+
+Internet Explorer 9 及更早版本不支持 flex 属性。
+
+Internet Explorer 10 通过 -ms-flex 属性来支持。 IE11 及更新版本完全支持 flex 属性 (不需要 -ms- 前缀)。
+
+Safari 6.1 (及更新浏览器) 通过 -webkit-flex 属性支持。
+
+*/
+
+.flex{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+/* 
+
+主轴方向
+
+*/
+
+.flex_row_reverse{
+    flex-direction: row-reverse;
+}
+
+.flex_col{
+    flex-direction: column;
+}
+
+.flex_col_reverse{
+    flex-direction: column-reverse;
+}
+
+/* 
+
+主轴排列
+
+*/
+
+.flex_row_between{
+    justify-content: space-between;
+}
+
+.flex_row_around{
+    justify-content: space-around;
+}
+
+.flex_row_start{
+    justify-content: flex-start;
+}
+
+.flex_row_end{
+    justify-content: flex-end;
+}
+
+.flex_row_center{
+    justify-content: center;
+}
+
+
+/* 
+
+交叉轴排列
+
+*/
+
+.ali_item_start{
+    align-items: flex-start;
+}
+
+.ali_item_end{
+    align-items: flex-end;
+}
+
+.ali_item_center{
+    align-items: center;
+}
+
+.ali_item_base{
+    align-items: baseline;
+}
+
+.ali_item_stretch{
+    align-items: stretch;
+}
+
+
+/* 
+
+单个项目对齐
+
+*/
+
+
+.ali_self_start{
+    align-self: flex-start;
+}
+
+.ali_self_end{
+    align-self: flex-end;
+}
+
+.ali_self_auto{
+    align-self: auto;
+}
+
+.ali_self_center{
+    align-self: center;
+}
+
+.ali_self_base{
+    align-self: baseline;
+}
+
+.ali_self_stretch{
+    align-self: stretch;
+}
+
+
+/* 
+
+多根轴线时 对齐方式
+
+*/
+
+.ali_centent_start{
+    align-content: flex-start;
+}
+
+.ali_centent_end{
+    align-content: flex-end;
+}
+
+.ali_centent_center{
+    align-content: center;
+}
+
+.ali_centent_between{
+    align-content: space-between;
+}
+
+.ali_centent_around{
+    align-content: space-around;
+}
+
+.ali_centent_stretch{
+    align-content: stretch;
+}
+
+/* 
+
+换行
+
+*/
+
+.flex_nowrap{
+    flex-wrap: nowrap;
+}
+
+.flex_wrap{
+    flex-wrap: wrap;
+}
+
+.flex_wrap_reverse{
+    flex-wrap: wrap-reverse;
+}
+
+/* 
+
+弹性排序
+
+*/
+
+.item_order1{
+    order: 1; /* 0为默认值 */
+}
+
+.item_order2{
+    order: 2; 
+}
+
+.item_order3{
+    order: 3; 
+}
+
+.item_order4{
+    order: 4; 
+}
+
+.item_order5{
+    order: 5;  
+}
+
+/*
+
+放大倍数
+
+Internet Explorer 10 及更早版本浏览器不支持 flex-grow 属性。
+
+*/
+
+.flex_grow_1x{
+    flex-grow: 1;
+}
+
+.flex_grow_2x{
+    flex-grow: 2;
+}
+
+.flex_grow_3x{
+    flex-grow: 3;
+}
+
+
+/* 
+
+Grid布局  
+
+Grid 布局是将容器划分成了“行”和“列”，产生了一个个的网格，我们可以将网格元素放在与这些行和列相关的位置上，从而达到我们布局的目的。( IE 10 以下不支持 )
+
+*/
+
+.grid{
+    display: grid;
+}
+
+
+
+
+
+/* 
+
+浮动（尽量不要使用该属性）
+
+//浮动带来的最大影响就是，当父元素只包含浮动的子元素的时候，父元素的高度就会塌陷（height变为0）。
+
+*/
+
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.f_c{
+    float: none;
+}
+.c_left{
+    clear: left;
+}
+.c_right{
+    clear: right;
+}
+
+/* 
+
+堆叠元素定位
+
+*/
+
+.z_2{
+    z-index: 2;
+}
+.z_99{
+    z-index: 99;
+}
+.z_9999{
+    z-index: 9999;
+}
+
+/* 
+
+定位相关
+
+*/
+.p_re{
+    position: relative;
+}
+.p_ab{
+    position: absolute;
+}
+.p_fi{
+    position: fixed;
+}
+
+/* 
+
+边框圆角
+
+*/
+
+.b_a_4x{
+    border-radius: 4px;
+}
+.b_a_6x{
+    border-radius: 6px;
+}
+.b_a_8x{
+    border-radius: 8px;
+}
+.b_a_10x{
+    border-radius: 10px;
+}
+.b_a_16x{
+    border-radius: 16px;
+}
+.b_a_24x{
+    border-radius: 24px;
+}
+
+/* 
+
+文字相关
+
+*/
+
+
+
+.text_size_10{
+    font-size: 10px;
+}
+.text_size_11{
+    font-size: 11px;
+}
+.text_size_12{
+    font-size: 12px;
+}
+.text_size_13{
+    font-size: 13px;
+}
+.text_size_14{
+    font-size: 14px;
+}
+.text_size_15{
+    font-size: 15px;
+}
+.text_size_16{
+    font-size: 16px;
+}
+.text_size_17{
+    font-size: 17px;
+}
+.text_size_18{
+    font-size: 18px;
+}
+.text_size_19{
+    font-size: 19px;
+}
+.text_size_20{
+    font-size: 20px;
+}
+.text_size_21{
+    font-size: 21px;
+}
+.text_size_22{
+    font-size: 22px;
+}
+.text_size_23{
+    font-size: 23px;
+}
+.text_size_24{
+    font-size: 24px;
+}
+.text_size_25{
+    font-size: 25px;
+}
+.text_size_26{
+    font-size: 26px;
+}
+.text_size_27{
+    font-size: 27px;
+}
+.text_size_28{
+    font-size: 28px;
+}
+.text_size_29{
+    font-size: 29px;
+}
+.text_size_30{
+    font-size: 30px;
+}
+.text_size_32{
+    font-size: 32px;
+}
+.text_size_34{
+    font-size: 34px;
+}
+
+.text_weight_400{
+    font-weight: 400;
+}
+.text_weight_500{
+    font-weight: 500;
+}
+.text_weight_bold{
+    font-weight: bold;
+}
+
+.text_line_over{
+    text-decoration: overline;
+}
+.text_line_through{
+    text-decoration: line-through;
+}
+.text_line_under{
+    text-decoration: underline;
+}
+.text_line_none{
+    text-decoration: none;
+}
+
+.text_left{
+    text-align: left;
+}
+.text_right{
+    text-align: right;
+}
+.text_center{
+    text-align: center;
+}
+
+/* 
+
+    禁止用户选择文本
+
+*/
+.noSelect {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+
+/* 
+
+    更改被选中的背景颜色
+
+*/
+
+
+
+/* .select::selection {
+    color: #ececec;
+    background: #222831;
+} */
+
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+  html {
+    -ms-overflow-style: none;
+  }
+  
+  /* // 2
+  // 去掉滚动条宽度 避免左右tab造成页面切换 */
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+  }
+  /* // 滚动条 */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+  }
+  
+
+
+/* 
+
+文字截断换行
+
+*/
+
+.t_break_all{
+    word-break: break-all;
+}
+.t_break_keep{
+    word-break: keep-all;
+}
+
+
+/* 
+
+文字溢出相关
+
+只有基于webkit内核的浏览器才支持   （Firefox,IE均不支持）
+
+有纯css实现该效果，若遇到适配浏览器的问题可使用。
+
+<div class="wrap">
+  <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos labore sit vel itaque delectus atque quos magnam assumenda quod architecto perspiciatis animi.</div>
+</div>
+
+.wrap {
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.wrap .text {
+  float: right;
+  margin-left: -5px;
+  width: 100%;
+  word-break: break-all;
+}
+.wrap::before {
+  float: left;
+  width: 5px;
+  content: '';
+  height: 40px;
+}
+.wrap::after {
+  float: right;
+  content: "...";
+  height: 20px;
+  line-height: 20px;
+  width: 3em;             为三个省略号的宽度 
+  margin-left: -3em;      使盒子不占位置 
+  position: relative;     移动省略号位置 
+  left: 100%;
+  top: -20px;
+  padding-right: 5px;
+}
+
+
+*/
+
+.text_hide{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text_2_hide{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.text_3_hide{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* 
+
+文字间距（用于英文单词中为字母与字母之间的间距）
+
+*/
+
+.text_space_2x{
+    letter-spacing: 2px;
+}
+
+.text_space_3x{
+    letter-spacing: 3px;
+}
+
+.text_space_4x{
+    letter-spacing: 4px;
+}
+
+/* 
+
+英文单词之间的间距
+
+*/
+
+.text_spaceEn_1x{
+    word-spacing: 1px;
+}
+
+.text_spaceEn_1.5x{
+    word-spacing: 1.5px;
+}
+
+.text_spaceEn_2x{
+    word-spacing: 2px;
+}
+
+.text_spaceEn_3x{
+    word-spacing: 3px;
+}
+
+.text_spaceEn_4x{
+    word-spacing: 4px;
+}
+
+/* 
+
+文字转换大小写
+
+*/
+
+.uppercase {text-transform:uppercase;}
+.lowercase {text-transform:lowercase;}
+/* 单词首字母大写 */
+.capitalize {text-transform:capitalize;}
+
+
+
+/* 
+
+行高（大多数浏览器的默认行高约为110%至120%。）
+
+*/
+
+.line_height_200{
+    line-height: 200%;
+}
+.line_height_250{
+    line-height: 250%;
+}
+.line_height_300{
+    line-height: 300%;
+}
+
+/* 
+
+首行缩进
+
+*/
+
+.ident_10{
+    text-indent: 10px;
+}
+.ident_20{
+    text-indent: 20px;
+}
+.ident_30{
+    text-indent: 30px;
+}
+.ident_40{
+    text-indent: 40px;
+}
+.ident_50{
+    text-indent: 50px;
+}
+
+
+/* 
+
+断行
+
+*/
+
+.text_wrap{
+    white-space:wrap;
+}
+.text_nowrap{
+    white-space:nowrap;
+}
+
+/* 
+
+图片相关
+
+*/
+
+.wid100{
+	width: 100%;
+}
+
+.wid90{
+	width: 90%;
+}
+
+.img100{
+    width: 100%;
+    height: 100%;
+}
+
+.hei100{
+	height: 100vh;
+}
+/* 
+
+垂直对齐图像
+
+*/
+
+.img_ver_mid{
+    vertical-align: middle;
+}
+.img_ver_top{
+    vertical-align: top;
+}
+.img_ver_bot{
+    vertical-align: bottom;
+}
+.img_ver_text_top{
+    vertical-align: text-top;
+}
+.img_ver_text_bottom{
+    vertical-align: text-bottom;
+}
+
+/* 
+
+背景图
+
+*/
+
+.bg_img_100{
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+.bg_img_x{
+    background-repeat: repeat-x;
+}
+.bg_img_y{
+    background-repeat: repeat-y;
+}
+
+
+/* 
+
+段落间隔 (多列)
+
+*/
+
+.ppp {
+    columns: 3;
+    column-rule: solid 2px #222;
+}
+
+
+
